@@ -1,0 +1,60 @@
+:root {
+  --bg-color: #37474F;
+  --radius: 4px;
+  --font-size: 1.4rem;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #37474F;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.input-wrapper {
+  width: 15rem;
+  height: 2rem;
+  position: relative;
+  border-radius: var(--radius);
+}
+
+.input-wrapper__input {
+  padding: .55em .5em;
+  height: 100%;
+  width: 100%;
+  font-size: var(--font-size);
+  border: 1px solid #fff;
+  border-radius: var(--radius);
+  background: var(--bg-color);
+  color: #fff;
+}
+
+.input-wrapper__label {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  font-size: var(--font-size);
+  color: #fff;
+  cursor: text;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  transition: -webkit-transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
+}
+
+.input-wrapper__input:focus + .input-wrapper__label,
+.input-wrapper__input:not(:placeholder-shown) + .input-wrapper__label {
+  -webkit-transform: scale(0.77) translate(-25%, -110%);
+          transform: scale(0.77) translate(-25%, -110%);
+  color: #fff;
+  background: #37474F;
+}
+/*# sourceMappingURL=style.css.map */
