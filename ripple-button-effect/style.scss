@@ -1,0 +1,41 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 1em 3em;
+  border: none;
+  background: rgb(107, 127, 240);
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(228, 228, 228);
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.23);
+  position: relative;
+  overflow: hidden;
+}
+
+span {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  pointer-events: none;
+  border-radius: 50%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  animation: ripple 1.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+@keyframes ripple {
+  0% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2);
+  }
+}
