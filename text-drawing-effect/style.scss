@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #3F4057;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  fill: transparent;
+  animation: fill-color 1.5s 4.6s ease both, bouncing .6s 5.4s ease-out forwards;
+}
+
+path {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: line-draw 5s .5s ease both
+}
+
+@keyframes line-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-color {
+  to {
+    fill: #fff;
+  }
+}
+
+@keyframes bouncing {
+  0% {
+    transform: translateY(0) scaleY(1);
+  }
+
+  55% {
+    transform: translateY(-20px) scaleY(1.02);
+  }
+
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
