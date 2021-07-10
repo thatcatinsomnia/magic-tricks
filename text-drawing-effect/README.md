@@ -1,3 +1,3 @@
 效果：
 
-![input label animation](./example.gif)
+![text-drawing-effect](./example.gif)

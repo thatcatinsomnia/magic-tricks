@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #201c22;
+}
+
+.spinner {
+  border: 5px solid transparent;
+  margin: 1px;
+  border-radius: 50%;
+  border-color: #ec931f #ec931f transparent transparent;
+  -webkit-animation: rotate 4s cubic-bezier(0.56, -0.17, 0.48, 1.2) infinite;
+          animation: rotate 4s cubic-bezier(0.56, -0.17, 0.48, 1.2) infinite;
+}
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+/*# sourceMappingURL=style.css.map */

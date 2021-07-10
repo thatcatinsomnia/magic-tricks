@@ -1,3 +1,3 @@
 效果：
 
-![input label animation](./example.gif)
+![ripple button effect](./example.gif)

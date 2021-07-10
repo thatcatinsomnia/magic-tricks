@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: rgb(32, 28, 34);
+}
+
+.spinner {
+  border: 5px solid transparent;
+  margin: 1px;
+  border-radius: 50%;
+  border-color: rgb(236, 147, 31) rgb(236, 147, 31) transparent  transparent;
+  animation: rotate 4s cubic-bezier(.56,-0.17,.48,1.2) infinite;
+}
+
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
