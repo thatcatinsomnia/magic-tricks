@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background: #f3f3ef;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.liquid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.liquid__box {
+  width: 5rem;
+  height: 5rem;
+  background: #96caec;
+  position: relative;
+  overflow: hidden;
+}
+
+.liquid__box::after {
+  content: '';
+  position: absolute;
+  left: -50%;
+  top: -140%;
+  width: 200%;
+  height: 200%;
+  background: #f3f3ef;
+  border-radius: 61% 39% 57% 43% / 47% 57% 43% 53%;
+  -webkit-animation: rotate 7s linear infinite;
+          animation: rotate 7s linear infinite;
+}
+
+.liquid__text {
+  padding: .5rem;
+  letter-spacing: .24em;
+  color: #8794a5;
+}
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
